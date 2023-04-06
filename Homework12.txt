@@ -1,0 +1,46 @@
+1. /<[^>]+>/
+[]: danh sách liệt kê các kí tự có thể sử dụng
+[^]: phủ định của tập hợp sau (ko được có kí tự sau)
++: tồn tại ít nhất 1 giá trị
+
+a.Đúng
+b. Sai (có dấu ">")
+c. Đúng
+d. Sai (không có giá trị nào)
+e. Đúng
+
+2. /a.[bc]+/
+.: tất cả các kí tự đều thỏa mãn (bắt buộc phải có)
+
+a.Đúng (b match ".")
+b.Đúng
+c.Đúng
+d.Đúng
+e.Sai (thiếu "." hoặc [bc])
+f.Đúng
+
+3. /(very )+(fat )?(tall|ugly )man/ (nhớ để ý cả dấu space)
+?: xuất hiện 0 hoặc 1 lần
+
+a. Sai (không có tall hoặc ugly)
+b.Sai (không có very)
+c. Đúng
+d. Đúng
+
+4."abc.def.ghi.jkx" 
+thêm dấu '\' trước kí tự đặc biệt để sử dụng giá trị của kí tự
+w: bao gồm kí tự từ a->z và A->Z, 0->9
+^: bắt đầu của 1 string
++ chỉ cần substring match BTCQ là được
+
+/...\....\..../
+\w*(...)\.(...)\.(...)/w*
+
+5. /d: digits, kí tự số từ 0-9
+{number}: số lượng
+[]: list các kí tự được sử dụng
+
+/\(?\d{3}\)?[.- ]?\d{3}[.- ]?\d{4}/
+
+
+6. /(^([A-Za-z0-9][-_ ]?))+[^ -_]$)|()|([^ -_]$)/

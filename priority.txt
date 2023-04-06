@@ -1,0 +1,38 @@
+9:09 AM 9/16/2022
+
+Priority queue: 
+1. Find the priority object (min value).
+2. Delete (pop) the PO.
+3. Insert another value.
+
+
+- Heap tree: 
++ Min heap: complete tree & (fa<child).
+		Use min heap tree to represent a priority queue:
+		+ PO always be the root.
+		+ Change the position of the nodes.
++ Max heap: complete tree & (fa>child).
+- Programing: 
+/* class Priority {
+	Node *left;
+	Node *right;
+	Node *root;
+	int sum_node;
+	
+
+	public:
+	int find_min(){};
+	void delete(){};
+	insert(int value){};
+}
+
+	Use array: 
+	
+	
+*/
+Chủ đề: 
+Giải thích khái niệm
+Đặc trưng
+ứng dụng
+Code demo minh họa
+DL: TUẦN SAU NỮA
